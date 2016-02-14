@@ -14,6 +14,7 @@
 
 (setq ptb-packages '(
   auto-indent-mode
+  inline-crypt
   ov))
 
 ;; List of packages to exclude.
@@ -37,6 +38,9 @@
      auto-indent-delete-backward-char t
      auto-indent-fix-org-move-beginning-of-line t
      auto-indent-fix-org-yank t)))
+
+(defun ptb/init-inline-crypt ()
+  (use-package inline-crypt))
 
 (defun ptb/init-adaptive-wrap ()
   "Load the adaptive wrap package"
