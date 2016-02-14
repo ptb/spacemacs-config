@@ -1,9 +1,9 @@
 (setq
   default-frame-alist '(
     (top . 23)
-    (left . 44)
-    (height . 60)
-    (width . 124)
+    (left . 1023)
+    (height . 48)
+    (width . 91)
     (vertical-scroll-bars . right))
   initial-frame-alist (copy-alist default-frame-alist)
   deft-directory "~/Dropbox/Notes"
