@@ -270,8 +270,6 @@ you should place your code here."
 
   ;; Removes *scratch* from buffer after the mode has been set.
   (defun remove-scratch-buffer ()
-    (if (get-buffer "*scratch*")
-        (kill-buffer "*scratch*"))
     (if (get-buffer "*Messages*")
         (kill-buffer "*Messages*")))
   (add-hook 'after-change-major-mode-hook 'remove-scratch-buffer)
